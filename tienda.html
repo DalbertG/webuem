@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="img/logo/1.png" type="image/gif" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Hardware360</title>
+  
+  <style>
+	.mySlides {display:none; margin-left: auto; margin-right: auto;}
+  </style>
+
+</head>
+<body>
+	<header>
+		<div class="container-header">
+			<div class="logo-title">
+				<img src="img/logo/1.png" alt="">
+			</div>
+		</div>
+	</header>
+	<nav>
+		<a href="index.html">Inicio</a>
+		<a href="servicios.html">Servicios</a>
+		<a href="tienda.html">Tienda</a>
+		<a href="instalaciones.html">Instalaciones</a>
+		<a href="contacto.html">Contacto</a>
+		<div class="animation start-tienda"></div>
+	</nav>
+	<br>
+	<div class="w3-content w3-section">
+		<img class="mySlides" src="img/logo/2.png" style="width:50%">
+		<img class="mySlides" src="img/logo/3.jpg" style="width:50%">
+		<img class="mySlides" src="img/logo/4.jpg" style="width:50%">
+		<img class="mySlides" src="img/logo/5.jpg" style="width:50%">
+
+		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	<br>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>USB</h1>
+				<img src="img/tienda/1.jpg">
+				<h2>16€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Teclado</h1>
+				<img src="img/tienda/2.jpg">
+				<h2>26€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Jack</h1>
+				<img src="img/tienda/3.jpg">
+				<h2>12€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Altavoces</h1>
+				<img src="img/tienda/4.jpg">
+				<h2>30€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Pc a medida</h1>
+				<img src="img/tienda/5.jpg">
+				<h2>450-3599€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>portatiles para empresa</h1>
+				<img src="img/tienda/6.jpg">
+				<h2>300-2499€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Repetidor WIFI</h1>
+				<img src="img/tienda/7.jpg">
+				<h2>34€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="product-container">
+				<h1>Impresora</h1>
+				<img src="img/tienda/8.jpg">
+				<h2>120€</h2>
+			<div class="bottom-add">
+				<bottom onclick="window.location.href='pccustom.html'">carrito</bottom>
+			</div>
+			</div>
+		</div>
+		
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
